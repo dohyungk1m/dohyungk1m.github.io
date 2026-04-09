@@ -249,16 +249,16 @@ em {
   border: none;
 }
 
-.section-table:not(.no-hover) tr {
+.hover-rows tr {
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.section-table:not(.no-hover) tr:hover {
+.hover-rows tr:hover {
   transform: translateX(6px);
   background-color: rgba(38, 124, 185, 0.04);
 }
 
-[data-theme="dark"] .section-table:not(.no-hover) tr:hover {
+[data-theme="dark"] .hover-rows tr:hover {
   background-color: rgba(92, 168, 224, 0.06);
 }
 
