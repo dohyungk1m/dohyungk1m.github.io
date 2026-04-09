@@ -249,6 +249,19 @@ em {
   border: none;
 }
 
+.section-table tr {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.section-table tr:hover {
+  transform: translateX(6px);
+  background-color: rgba(38, 124, 185, 0.04);
+}
+
+[data-theme="dark"] .section-table tr:hover {
+  background-color: rgba(92, 168, 224, 0.06);
+}
+
 .pub-entry {
   padding: 8px 0;
   vertical-align: middle;
