@@ -24,6 +24,10 @@
           <!-- <a href="https://www.linkedin.com/in/dohyung-kim-5a944a374/">LinkedIn</a> -->
           <!-- <a href="https://github.com/dohyungk1m">GitHub</a> -->
         </nav>
+        <div class="theme-toggle" onclick="toggleTheme()">
+          <div class="toggle-track"><div class="toggle-knob"></div></div>
+          <span class="toggle-label">Dark mode</span>
+        </div>
       </header>
 
       <!-- Main Content -->
@@ -38,7 +42,7 @@
         <!-- News -->
         <h2>News</h2>
         <table class="section-table"><tbody>
-          <tr style="border-bottom:1px solid #e5e5e5;">
+          <tr style="border-bottom:1px solid var(--border);">
             <td style="padding:8px 0;width:25%;vertical-align:top">
               <strong>Nov. 2025</strong>
             </td>
@@ -46,7 +50,7 @@
               One paper has been accepted to AAAI 2026!
             </td>
           </tr>
-          <tr style="border-bottom:1px solid #e5e5e5;">
+          <tr style="border-bottom:1px solid var(--border);">
             <td style="padding:8px 0;width:25%;vertical-align:top">
               <strong>Aug. 2025</strong>
             </td>
@@ -157,5 +161,19 @@
 
       </section>
     </div>
+    <script>
+      function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      }
+      (function() {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
   </body>
 </html>
