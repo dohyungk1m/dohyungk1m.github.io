@@ -129,10 +129,6 @@ em {
   width: 240px;
   float: left;
   position: fixed;
-  background-color: #f5f7fa;
-  margin: -50px;
-  padding: 50px;
-  min-height: 100vh;
 }
 
 .name {
@@ -206,9 +202,7 @@ footer {
   }
   .sidebar {
     text-align: center;
-    margin: -50px -50px 30px;
-    padding: 50px 50px 30px;
-    min-height: auto;
+    margin-bottom: 30px;
   }
   .sidebar-links {
     flex-direction: row;
