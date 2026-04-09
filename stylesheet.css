@@ -64,14 +64,20 @@
 }
 
 a {
-  color: #1772d0;
+  color: #267cb9;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #0d5a9e;
   text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+  color: #444;
+  line-height: 1.6;
 }
 
 body,
@@ -87,6 +93,7 @@ a {
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
+  color: #333;
 }
 
 h2 {
@@ -94,14 +101,16 @@ h2 {
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+  color: #222;
   padding-bottom: 8px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #267cb9;
 }
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
+  color: #222;
 }
 
 .name {
@@ -109,6 +118,7 @@ h2 {
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+  color: #222;
 }
 
 .one {
@@ -134,4 +144,8 @@ h2 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+em {
+  color: #494949;
 }
