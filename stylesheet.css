@@ -78,6 +78,8 @@ body {
   background-color: #fff;
   color: #444;
   line-height: 1.6;
+  margin: 0;
+  padding: 50px;
 }
 
 body,
@@ -97,7 +99,7 @@ strong {
 }
 
 h2 {
-  margin: 0;
+  margin: 24px 0 12px;
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
@@ -113,39 +115,111 @@ h2 {
   color: #222;
 }
 
-.name {
-  padding-top: 20px;
-  margin: 0;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-  color: #222;
-}
-
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
 em {
   color: #494949;
+}
+
+/* Layout */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 240px;
+  float: left;
+  position: fixed;
+}
+
+.name {
+  margin: 0 0 16px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 28px;
+  color: #222;
+  line-height: 1.1;
+}
+
+.profile-photo {
+  width: 200px;
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.sidebar-title {
+  color: #494949;
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-links a {
+  display: block;
+}
+
+.content {
+  width: 620px;
+  float: right;
+  padding-bottom: 50px;
+}
+
+.section-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 8px;
+}
+
+.section-table td {
+  border: none;
+}
+
+.pub-entry {
+  padding: 8px 0;
+  vertical-align: middle;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Responsive */
+@media screen and (max-width: 960px) {
+  .wrapper {
+    width: auto;
+  }
+  .sidebar,
+  .content {
+    float: none;
+    position: static;
+    width: auto;
+  }
+  .sidebar {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .sidebar-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+  }
+  .name {
+    font-size: 28px;
+  }
+  .profile-photo {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
 }

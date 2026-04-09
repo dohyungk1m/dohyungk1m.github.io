@@ -11,186 +11,151 @@
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
+    <div class="wrapper">
 
-          <!-- Header: Name + Photo + Intro + Links -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Dohyung Kim
-                </p>
-                <p>
-                  I am a Ph.D. candidate in Electrical and Computer Engineering at Seoul National University, advised by Prof. <a href="http://milab.snu.ac.kr/kjung/index.html">Kyomin Jung</a>.
-                  My current research interests include efficient inference and reinforcement learning for large language models.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:kimdohyung@snu.ac.kr">Email</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=rxFYBDkAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                  <!-- <a href="https://www.linkedin.com/in/dohyung-kim-5a944a374/">LinkedIn</a> &nbsp;/&nbsp; -->
-                  <!-- <a href="https://github.com/dohyungk1m">GitHub</a> -->
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
+      <!-- Sidebar: Name + Photo + Links -->
+      <header class="sidebar">
+        <h1 class="name">Dohyung Kim</h1>
+        <img src="images/profile.jpg" alt="profile photo" class="profile-photo">
+        <p class="sidebar-title">Ph.D. Candidate<br>Seoul National University</p>
+        <nav class="sidebar-links">
+          <a href="mailto:kimdohyung@snu.ac.kr">Email</a>
+          <a href="https://scholar.google.com/citations?user=rxFYBDkAAAAJ&hl=en">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/dohyung-kim-5a944a374/">LinkedIn</a>
+          <a href="https://github.com/dohyungk1m">GitHub</a>
+        </nav>
+      </header>
 
-          <!-- News -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px 16px 16px;width:100%;vertical-align:middle">
-                <h2>News</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="border-bottom:1px solid #e5e5e5;">
-              <td style="padding:8px 16px;width:25%;vertical-align:top">
-                <strong>Nov. 2025</strong>
-              </td>
-              <td style="padding:8px 16px;width:75%;vertical-align:top">
-                One paper has been accepted to AAAI 2026!
-              </td>
-            </tr>
-            <tr style="border-bottom:1px solid #e5e5e5;">
-              <td style="padding:8px 16px;width:25%;vertical-align:top">
-                <strong>Aug. 2025</strong>
-              </td>
-              <td style="padding:8px 16px;width:75%;vertical-align:top">
-                Two papers have been accepted to EMNLP 2025!
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:8px 16px;width:25%;vertical-align:top">
-                <strong>Sep. 2024</strong>
-              </td>
-              <td style="padding:8px 16px;width:75%;vertical-align:top">
-                One paper has been accepted to Findings of EMNLP 2024!
-              </td>
-            </tr>
-          </tbody></table>
+      <!-- Main Content -->
+      <section class="content">
 
-          <!-- Publications -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px 16px 16px;width:100%;vertical-align:middle">
-                <h2>Publications</h2>
-      </td>
-    </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- About -->
+        <p>
+          I am a Ph.D. candidate in Electrical and Computer Engineering at Seoul National University, advised by Prof. <a href="http://milab.snu.ac.kr/kjung/index.html">Kyomin Jung</a>.
+          My current research interests include efficient inference and reinforcement learning for large language models.
+        </p>
 
-            <tr>
-              <td style="padding:8px 16px;width:100%;vertical-align:middle">
-                <span class="papertitle">Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?</span>
-                <br>
-                Jeonghye Kim, Xufang Luo, Minbeom Kim, Sangmook Lee, <strong>Dohyung Kim</strong>, Jiwon Jeon, Dongsheng Li, Yuqing Yang
-                <br>
-                <em>Preprint</em>
-              </td>
-            </tr>
+        <!-- News -->
+        <h2>News</h2>
+        <table class="section-table"><tbody>
+          <tr style="border-bottom:1px solid #e5e5e5;">
+            <td style="padding:8px 0;width:25%;vertical-align:top">
+              <strong>Nov. 2025</strong>
+            </td>
+            <td style="padding:8px 0 8px 16px;width:75%;vertical-align:top">
+              One paper has been accepted to AAAI 2026!
+            </td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e5e5;">
+            <td style="padding:8px 0;width:25%;vertical-align:top">
+              <strong>Aug. 2025</strong>
+            </td>
+            <td style="padding:8px 0 8px 16px;width:75%;vertical-align:top">
+              Two papers have been accepted to EMNLP 2025!
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:8px 0;width:25%;vertical-align:top">
+              <strong>Sep. 2024</strong>
+            </td>
+            <td style="padding:8px 0 8px 16px;width:75%;vertical-align:top">
+              One paper has been accepted to Findings of EMNLP 2024!
+            </td>
+          </tr>
+        </tbody></table>
 
-            <tr>
-              <td style="padding:8px 16px;width:100%;vertical-align:middle">
-                <span class="papertitle">Beyond Normalization: Rethinking the Partition Function as a Difficulty Scheduler for RLVR</span>
-                <br>
-                <strong>Dohyung Kim</strong>, Minbeom Kim, Jeonghye Kim, Sangmook Lee, Sojeong Rhee, Kyomin Jung
-                <br>
-                <em>Preprint</em>
-              </td>
-            </tr>
+        <!-- Publications -->
+        <h2>Publications</h2>
+        <table class="section-table"><tbody>
+          <tr>
+            <td class="pub-entry">
+              <span class="papertitle">Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?</span>
+              <br>
+              Jeonghye Kim, Xufang Luo, Minbeom Kim, Sangmook Lee, <strong>Dohyung Kim</strong>, Jiwon Jeon, Dongsheng Li, Yuqing Yang
+              <br>
+              <em>Preprint</em>
+            </td>
+          </tr>
+          <tr>
+            <td class="pub-entry">
+              <span class="papertitle">Beyond Normalization: Rethinking the Partition Function as a Difficulty Scheduler for RLVR</span>
+              <br>
+              <strong>Dohyung Kim</strong>, Minbeom Kim, Jeonghye Kim, Sangmook Lee, Sojeong Rhee, Kyomin Jung
+              <br>
+              <em>Preprint</em>
+            </td>
+          </tr>
+          <tr>
+            <td class="pub-entry">
+              <span class="papertitle">Confidence-Guided Stepwise Model Routing for Cost-Efficient Reasoning</span>
+              <br>
+              Sangmook Lee*, <strong>Dohyung Kim</strong>*, Hyukhun Koh, Nakyeong Yang, Kyomin Jung
+              <br>
+              <em>AAAI 2026</em>
+            </td>
+          </tr>
+          <tr>
+            <td class="pub-entry">
+              <span class="papertitle">ReflAct: World-Grounded Decision Making in LLM Agents via Goal-State Reflection</span>
+              <br>
+              Jeonghye Kim, Sojeong Rhee, Minbeom Kim, <strong>Dohyung Kim</strong>, Sangmook Lee, Youngchul Sung, Kyomin Jung
+              <br>
+              <em>EMNLP 2025</em>
+            </td>
+          </tr>
+          <tr>
+            <td class="pub-entry">
+              <span class="papertitle">Conditional [MASK] Discrete Diffusion Language Model</span>
+              <br>
+              Hyukhun Koh, Minha Jhang, <strong>Dohyung Kim</strong>, Sangmook Lee, Kyomin Jung
+              <br>
+              <em>EMNLP 2025</em>
+            </td>
+          </tr>
+          <tr>
+            <td class="pub-entry">
+              <span class="papertitle">Can LLMs Recognize Toxicity? A Structured Investigation Framework and Toxicity Metric</span>
+              <br>
+              Hyukhun Koh, <strong>Dohyung Kim</strong>, Minwoo Lee, Kyomin Jung
+              <br>
+              <em>Findings of EMNLP 2024</em>
+            </td>
+          </tr>
+        </tbody></table>
 
-            <tr>
-              <td style="padding:8px 16px;width:100%;vertical-align:middle">
-                <span class="papertitle">Confidence-Guided Stepwise Model Routing for Cost-Efficient Reasoning</span>
-                <br>
-                Sangmook Lee*, <strong>Dohyung Kim</strong>*, Hyukhun Koh, Nakyeong Yang, Kyomin Jung
-                <br>
-                <em>AAAI</em>, 2026
-              </td>
-            </tr>
+        <!-- Education -->
+        <h2>Education</h2>
+        <table class="section-table"><tbody>
+          <tr style="border-bottom:1px solid #e5e5e5;">
+            <td style="padding:8px 0;width:75%;vertical-align:top">
+              <strong>Ph.D. Candidate</strong> in Electrical and Computer Engineering
+              <br>
+              Seoul National University
+            </td>
+            <td style="padding:8px 0;width:25%;vertical-align:top;text-align:right;white-space:nowrap;">
+              2024.03 — Present
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:8px 0;width:75%;vertical-align:top">
+              <strong>B.S.</strong> in Electrical and Computer Engineering
+              <br>
+              Seoul National University, <em>Cum Laude</em>
+            </td>
+            <td style="padding:8px 0;width:25%;vertical-align:top;text-align:right;white-space:nowrap;">
+              2019.03 — 2024.02
+            </td>
+          </tr>
+        </tbody></table>
 
-            <tr>
-              <td style="padding:8px 16px;width:100%;vertical-align:middle">
-                <span class="papertitle">ReflAct: World-Grounded Decision Making in LLM Agents via Goal-State Reflection</span>
-                <br>
-                Jeonghye Kim, Sojeong Rhee, Minbeom Kim, <strong>Dohyung Kim</strong>, Sangmook Lee, Youngchul Sung, Kyomin Jung
-                <br>
-                <em>EMNLP</em>, 2025
-              </td>
-            </tr>
+        <!-- Footer -->
+        <footer>
+          <p style="font-size:small;">
+            This page is based on <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's website template</a>.
+          </p>
+        </footer>
 
-            <tr>
-              <td style="padding:8px 16px;width:100%;vertical-align:middle">
-                <span class="papertitle">Conditional [MASK] Discrete Diffusion Language Model</span>
-                <br>
-                Hyukhun Koh, Minha Jhang, <strong>Dohyung Kim</strong>, Sangmook Lee, Kyomin Jung
-                <br>
-                <em>EMNLP</em>, 2025
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:8px 16px;width:100%;vertical-align:middle">
-                <span class="papertitle">Can LLMs Recognize Toxicity? A Structured Investigation Framework and Toxicity Metric</span>
-                <br>
-                Hyukhun Koh, <strong>Dohyung Kim</strong>, Minwoo Lee, Kyomin Jung
-                <br>
-                <em>Findings of EMNLP</em>, 2024
-              </td>
-            </tr>
-
-          </tbody></table>
-
-          <!-- Education -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px 16px 16px;width:100%;vertical-align:middle">
-                <h2>Education</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="border-bottom:1px solid #e5e5e5;">
-              <td style="padding:10px 16px;width:75%;vertical-align:top">
-                <strong>Ph.D. Candidate</strong> in Electrical and Computer Engineering
-                <br>
-                Seoul National University
-              </td>
-              <td style="padding:10px 16px;width:25%;vertical-align:top;text-align:right;white-space:nowrap;">
-                2024.03 — Present
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:10px 16px;width:75%;vertical-align:top">
-                <strong>B.S.</strong> in Electrical and Computer Engineering
-                <br>
-                Seoul National University, <em>Cum Laude</em>
-              </td>
-              <td style="padding:10px 16px;width:25%;vertical-align:top;text-align:right;white-space:nowrap;">
-                2019.03 — 2024.02
-              </td>
-            </tr>
-          </tbody></table>
-
-          <!-- Footer -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px">
-                <br>
-                <p style="text-align:center;font-size:small;">
-                  This page is based on <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's website template</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-        </td>
-      </tr>
-    </tbody></table>
+      </section>
+    </div>
   </body>
 </html>
