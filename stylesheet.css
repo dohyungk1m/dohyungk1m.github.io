@@ -105,7 +105,7 @@ h2 {
   font-size: 22px;
   color: #222;
   padding-bottom: 8px;
-  border-bottom: 2px solid #267cb9;
+  border-bottom: 2px solid #0d5a9e;
 }
 
 .papertitle {
@@ -129,7 +129,7 @@ em {
   width: 240px;
   float: left;
   position: fixed;
-  background-color: #f0f4f8;
+  background-color: #f5f7fa;
   margin: -50px;
   padding: 50px;
   min-height: 100vh;
