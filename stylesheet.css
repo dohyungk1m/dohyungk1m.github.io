@@ -142,7 +142,7 @@ em {
 .profile-photo {
   width: 200px;
   max-width: 100%;
-  border-radius: 50%;
+  border-radius: 0;
   object-fit: cover;
   margin-bottom: 16px;
 }
