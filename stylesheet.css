@@ -199,6 +199,7 @@ em {
   width: 240px;
   float: left;
   position: fixed;
+  height: calc(100vh - 100px);
 }
 
 .name {
@@ -267,13 +268,22 @@ em {
   vertical-align: middle;
 }
 
+.code-link {
+  font-size: 13px;
+}
+
+.code-link:not([href]),
 .code-link[href=""] {
   display: none;
 }
 
-footer {
-  margin-top: 40px;
-  padding-top: 16px;
+.sidebar-footer {
+  position: absolute;
+  bottom: 50px;
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* Responsive */
