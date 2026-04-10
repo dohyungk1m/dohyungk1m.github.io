@@ -267,6 +267,10 @@ em {
   vertical-align: middle;
 }
 
+.code-link[href=""] {
+  display: none;
+}
+
 footer {
   margin-top: 40px;
   padding-top: 16px;
