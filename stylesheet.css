@@ -274,7 +274,7 @@ em {
 
 /* Scrollable News section (~5 single-line entries tall) */
 .news-scroll {
-  max-height: 198px;
+  max-height: 231px;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
