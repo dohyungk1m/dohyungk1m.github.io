@@ -32,7 +32,7 @@
           <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=DYw2-h8cT8_5HgZCK2_O64GoGKOnMHInE5rcRLBaGno&cl=ffffff&w=a"></script>
         </div>
         <p class="sidebar-footer">
-          Last updated: 2026-08-22.<br> This page is based on <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's template</a>.
+          Last updated: 2026-09-16.<br> This page is based on <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's template</a>.
         </p>
       </header>
 
@@ -47,6 +47,7 @@
 
         <!-- News -->
         <h2>News</h2>
+        <div class="news-scroll">
         <table class="section-table hover-rows"><tbody>
           <tr style="border-bottom:1px solid var(--border);">
             <td style="padding:8px 0;width:25%;vertical-align:top">
@@ -113,17 +114,12 @@
             </td>
           </tr>
         </tbody></table>
+        </div>
 
         <!-- Publications -->
-        <h2 class="pub-header">Publications
-          <span class="pub-toggle">
-            <button type="button" class="pub-toggle-btn active" id="pub-btn-selected" onclick="setPubView('selected')">Selected</button>
-            <span class="pub-toggle-sep">|</span>
-            <button type="button" class="pub-toggle-btn" id="pub-btn-all" onclick="setPubView('all')">All</button>
-          </span>
-        </h2>
-        <table class="section-table hover-rows pubs-selected" id="pub-table"><tbody>
-          <tr class="pub-extra">
+        <h2>Publications</h2>
+        <table class="section-table hover-rows"><tbody>
+          <tr>
             <td class="pub-entry">
               <span class="papertitle">Are We Measuring Strategy or Phrasing? The Gap Between Surface- and Approach-Level Diversity in LLM Math Reasoning</span>
               <br>
@@ -132,7 +128,7 @@
               <em>EMNLP 2026 & ICML 2026 AI4Math Workshop <strong>Spotlight</strong></em>
             </td>
           </tr>
-          <tr class="pub-extra">
+          <tr>
             <td class="pub-entry">
               <a href="https://arxiv.org/abs/2603.24472"><span class="papertitle">Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?</span></a>
               <br>
@@ -159,7 +155,7 @@
               <em>AAAI 2026</em> <a class="code-link" href="https://github.com/helmsman12/STEER">[Code]</a>
             </td>
           </tr>
-          <tr class="pub-extra">
+          <tr>
             <td class="pub-entry">
               <a href="https://aclanthology.org/2025.emnlp-main.1697/"><span class="papertitle">ReflAct: World-Grounded Decision Making in LLM Agents via Goal-State Reflection</span></a>
               <br>
@@ -168,7 +164,7 @@
               <em>EMNLP 2025</em> <a class="code-link" href="">[Code]</a>
             </td>
           </tr>
-          <tr class="pub-extra">
+          <tr>
             <td class="pub-entry">
               <a href="https://aclanthology.org/2025.emnlp-main.450/"><span class="papertitle">Conditional [MASK] Discrete Diffusion Language Model</span></a>
               <br>
@@ -177,7 +173,7 @@
               <em>EMNLP 2025</em> <a class="code-link" href="https://openreview.net/forum?id=3EnWz3kwVz">[Code]</a>
             </td>
           </tr>
-          <tr class="pub-extra">
+          <tr>
             <td class="pub-entry">
               <a href="https://aclanthology.org/2024.findings-emnlp.353/"><span class="papertitle">Can LLMs Recognize Toxicity? A Structured Investigation Framework and Toxicity Metric</span></a>
               <br>
@@ -230,7 +226,7 @@
 
       </section>
       <p class="mobile-footer">
-        Last updated: 2026-08-22.<br>Based on <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's template</a>.
+        Last updated: 2026-09-16.<br>Based on <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's template</a>.
       </p>
     </div>
     <script>
@@ -246,11 +242,6 @@
           document.documentElement.setAttribute('data-theme', 'dark');
         }
       })();
-      function setPubView(view) {
-        document.getElementById('pub-table').classList.toggle('pubs-selected', view === 'selected');
-        document.getElementById('pub-btn-selected').classList.toggle('active', view === 'selected');
-        document.getElementById('pub-btn-all').classList.toggle('active', view === 'all');
-      }
     </script>
   </body>
 </html>
