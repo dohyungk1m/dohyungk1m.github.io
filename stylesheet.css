@@ -272,10 +272,36 @@ em {
   vertical-align: middle;
 }
 
-/* Scrollable News section (~5 single-line entries tall) */
+/* Scrollable News section */
+.news-wrap {
+  position: relative;
+}
+
+/* Bottom fade: blur ramps up and content dissolves into the page background */
+.news-wrap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 8px; /* keep the scrollbar clear of the fade */
+  bottom: 0;
+  height: 64px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--bg));
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  mask-image: linear-gradient(to bottom, transparent, black 90%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 90%);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.news-wrap.at-bottom::after {
+  opacity: 0;
+}
+
 .news-scroll {
-  max-height: 231px;
-  overflow-y: auto;
+  max-height: 240px;
+  overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: var(--border) transparent;

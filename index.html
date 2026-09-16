@@ -21,7 +21,7 @@
         <nav class="sidebar-links">
           <a href="mailto:kimdohyung@snu.ac.kr">Email</a>
           <a href="https://scholar.google.com/citations?user=rxFYBDkAAAAJ&hl=en">Google Scholar</a>
-          <!-- <a href="https://www.linkedin.com/in/dohyung-kim-5a944a374/">LinkedIn</a> -->
+          <a href="https://www.linkedin.com/in/dohyung-kim-5a944a374/">LinkedIn</a>
           <!-- <a href="https://github.com/dohyungk1m">GitHub</a> -->
         </nav>
         <div class="theme-toggle" onclick="toggleTheme()">
@@ -47,7 +47,8 @@
 
         <!-- News -->
         <h2>News</h2>
-        <div class="news-scroll">
+        <div class="news-wrap">
+        <div class="news-scroll" id="news-scroll">
         <table class="section-table hover-rows"><tbody>
           <tr style="border-bottom:1px solid var(--border);">
             <td style="padding:8px 0;width:25%;vertical-align:top">
@@ -114,6 +115,7 @@
             </td>
           </tr>
         </tbody></table>
+        </div>
         </div>
 
         <!-- Publications -->
@@ -241,6 +243,17 @@
         if (saved === 'dark') {
           document.documentElement.setAttribute('data-theme', 'dark');
         }
+      })();
+      (function() {
+        const scroller = document.getElementById('news-scroll');
+        if (!scroller) return;
+        function updateFade() {
+          const atBottom = scroller.scrollTop + scroller.clientHeight >= scroller.scrollHeight - 4;
+          scroller.parentElement.classList.toggle('at-bottom', atBottom);
+        }
+        scroller.addEventListener('scroll', updateFade);
+        window.addEventListener('resize', updateFade);
+        updateFade();
       })();
     </script>
   </body>
